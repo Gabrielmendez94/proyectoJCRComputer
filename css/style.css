@@ -66,6 +66,11 @@ body{
     justify-content: center;
     align-items: center;
     padding: 15px;
+    transition: transform 2s;
+}
+
+.principal_seccion:hover{
+    transform: scale(1.2);
 }
 
 .principal_seccion--subtitulo{
@@ -128,6 +133,14 @@ body{
     flex-direction: row;
     align-items: center;
     margin-bottom: 10px;
+}
+
+.fa-brands{
+    transition: transform 1s;
+}
+
+.fa-brands:hover{
+    transform: rotate(360deg);
 }
 
 .icon{
@@ -216,6 +229,11 @@ body{
 .servicios_imagen{
     width: 100%;
     height: 100%;
+    transition: transform 0.5s;
+}
+
+.servicios_imagen:hover{
+    transform: scale(1.1);
 }
 
 .servicios_texto{
@@ -309,4 +327,10 @@ body{
     .footer_maps{
         display: none;
     }
+}
+
+/*PISANDO PROPIEDADES DE BOOTSTRAP*/
+ul{
+    margin-bottom: 0;
+    padding-left: 0;
 }

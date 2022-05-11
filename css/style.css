@@ -6,47 +6,29 @@
 
 body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-image: linear-gradient(to left, rgb(55, 139, 55), rgb(47, 47, 194));
+    background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(255, 255, 255));
     background-size: cover;
     height: 100vh;
 }
 
-.header {
-    background-color:  rgb(31, 25, 25);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;    
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
+.navbar{
+    background-color: black;
+    color: orange;
 }
 
-.header_logo{
-    padding-left: 30px;
-    width: 55%;
-    height: 55%;
-}
-
-
-
-.nav_lista{
-    list-style: none;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.nav_item{
+.navbar-brand, .nav-link{
     text-decoration: none;
-    color: white;
-    padding: 10px;
-    font-size: 1.1rem;
+    color: orange !important;
 }
 
-#burger{
-    display: none;
+.btn-outline-success{
+    border: solid 1px orange;
+    color: orange;
+}
+
+.burger_button{
+    background-color: orange;
+    color: orange;
 }
 
 .principal{
@@ -57,7 +39,7 @@ body{
 }
 
 .principal_seccion{
-    background-color: rgb(55, 184, 178);
+    background-color: rgb(31, 25, 25);
     width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -74,6 +56,7 @@ body{
 }
 
 .principal_seccion--subtitulo{
+    color: orange;
     font-size: 2rem;
     text-align: center;
 }
@@ -89,7 +72,7 @@ body{
 }
 
 .principal_titulo{
-    color: white;
+    color: orange;
     font-size: 5rem;
     width: auto;
     text-align: center;
@@ -115,7 +98,7 @@ body{
 }
 
 .footer_titulo{
-    color: white;
+    color: orange;
     font-size: 1.6rem;
     margin-bottom: 10px;
 }
@@ -125,7 +108,7 @@ body{
 }
 
 .footer_lista , .icon , .footer_text{
-    color: white;
+    color: orange;
 }
 
 .footer_telefono , .footer_mail , .footer_direc{
@@ -187,63 +170,29 @@ body{
     flex-direction: column;
 }
 
-.servicios{
-    display: grid;
-    grid-template-columns: 40% 40%;
-/*    grid-template-rows: 40% 40%;*/
-    justify-content: center;
-    align-content: center;
-    gap: 10px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
 
-.servicios_opciones--1{
-    background-color: blue;
-    position: relative;
+.carrusel_caja{
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 700px;
+    height: 120px;
+    background-color: black;
     border: solid 2px orange;
-    border-radius: 5px;
 }
 
-.servicios_opciones--2{
-    background-color: pink;
-    position: relative;
+.carrusel_titulo{
+    background-color: gray;
+    color: orange;
+    padding: 10px;
+    border-radius: 5px;
     border: solid 2px orange;
+}
+
+.d-block{
+    border: solid orange 2px;
     border-radius: 5px;
 }
 
-.servicios_opciones--3{
-    background-color: green;
-    position: relative;
-    border: solid 2px orange;
-    border-radius: 5px;
-}
-
-.servicios_opciones--4{
-    background-color: aqua;
-    position: relative;
-    border: solid 2px orange;
-    border-radius: 5px;
-}
-
-.servicios_imagen{
-    width: 100%;
-    height: 100%;
-    transition: transform 0.5s;
-}
-
-.servicios_imagen:hover{
-    transform: scale(1.1);
-}
-
-.servicios_texto{
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: white;
-    background-color: rgb(0, 0, 0,0.7);
-    border-radius: 5px;
-}
 
 @media screen and (max-width: 1023px){
 
@@ -333,4 +282,8 @@ body{
 ul{
     margin-bottom: 0;
     padding-left: 0;
+}
+
+.card{
+    margin-bottom: 10px;
 }

@@ -21,6 +21,20 @@ body{
     color: orange !important;
 }
 
+.nav-link:hover{
+    background-color: rgb(71, 71, 71);
+    border: 1px solid orange;
+    transform: scale(1.05);
+    transition: transform 0.8s;
+    border-radius: 5px;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    transition: transform 0.5s;
+    border: solid orange 2px;
+    border-radius: 5px;
+}
 .btn-outline-success{
     border: solid 1px orange;
     color: orange;
@@ -35,7 +49,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 40px;
 }
 
 .principal_seccion{
@@ -225,6 +239,10 @@ body{
 
     #burger{
         display: none;
+    }
+
+    .carrusel_caja{
+        width: 420px;
     }
 
 }

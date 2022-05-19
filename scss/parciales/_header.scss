@@ -1,0 +1,29 @@
+.navbar{
+    background-color: black;
+    color: $colorDelTexto;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: $colorDelTexto !important;
+    
+    &:hover{
+        background-color: rgb(71, 71, 71);
+        border: 1px solid orange;
+        transform: scale(1.05);
+        transition: transform 0.8s;
+        border-radius: 5px;
+    }
+}
+
+.btn-outline-success{
+    border: solid 1px orange;
+    color: $colorDelTexto;
+}
+
+.burger_button{
+    background-color: orange;
+    color: $colorDelTexto;
+}
+
+

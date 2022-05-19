@@ -1,0 +1,55 @@
+.footer {
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-items: center;
+    margin-top: 40px;
+
+    &_seccion{
+        background-color: rgb(31, 25, 25);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    &_titulo{
+        color: $colorDelTexto;
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+    }
+    
+    &_redes{
+        padding: 20px;
+    }
+}
+
+
+
+.footer_lista , .icon , .footer_text{
+    color: $colorDelTexto;
+}
+
+.footer_telefono , .footer_mail , .footer_direc{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.fa-brands{
+    transition: transform 1s;
+
+    &:hover{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.icon{
+    margin-right: 5px;
+}

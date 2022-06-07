@@ -9,7 +9,7 @@
     
     &:hover{
         background-color: rgb(71, 71, 71);
-        border: 1px solid orange;
+        border: 1px solid #86e3ce;
         transform: scale(1.05);
         transition: transform 0.8s;
         border-radius: 5px;
@@ -17,12 +17,12 @@
 }
 
 .btn-outline-success{
-    border: solid 1px orange;
+    border: solid 1px #86e3ce;
     color: $colorDelTexto;
 }
 
 .burger_button{
-    background-color: orange;
+    background-color: #86e3ce;
     color: $colorDelTexto;
 }
 

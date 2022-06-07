@@ -9,7 +9,7 @@
     &:hover{
         transform: scale(1.05);
         transition: transform 0.5s;
-        border: solid orange 2px;
+        border: solid #86e3ce 2px;
         border-radius: 5px;
     }
 }
@@ -21,6 +21,11 @@
     align-items: center;
     padding-top: 40px;
     margin-bottom: 100px;
+
+    &_seccion1{
+        @include tamaños(100%,300px );
+        background-color: #86E3CE;
+    }
 
     &_seccion{
         @include tamaños(100%, auto);
@@ -50,8 +55,8 @@
         margin-top: 50px;
         margin-right: 1rem;
         padding: 1rem;
-        background-color: #ABDAE1;
-        border: solid 1px orange;
+        background-color: black;
+        border: solid 2px #86e3ce;
         color: $colorDeOtroTexto;
     }
     
@@ -94,13 +99,13 @@
 }
 
 .formulario{
-    background-color: #ABDAE1;
+    background-color: black;
     margin-top: 40px;
     width: 500px;
     margin-left: 2rem;
     padding: 0.5rem;
     border-radius: 5px;
-    border: solid 1px orange;
+    border: solid 1px #86e3ce;
     display: flex;
     flex-direction: column;
     color: $colorDeOtroTexto;
@@ -112,7 +117,7 @@
     padding-left: 100px;
     padding-right: 100px;
     background-color: black;
-    border: solid 2px orange;
+    border: solid 2px #86e3ce;
 }
 
 .carrusel_titulo{
@@ -120,10 +125,10 @@
     color: $colorDelTexto;
     padding: 10px;
     border-radius: 5px;
-    border: solid 2px orange;
+    border: solid 2px #86e3ce;
 }
 
 .d-block{
-    border: solid orange 2px;
+    border: solid #86e3ce 2px;
     border-radius: 5px;
 }
